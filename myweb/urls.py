@@ -20,5 +20,6 @@ from webpage import views as webviwes
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', webviwes.home),
+    path('similarity/', webviwes.similarity),
 
 ]
