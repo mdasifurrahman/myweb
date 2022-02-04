@@ -12,8 +12,8 @@ def similarity(request):
         return render(request, 'webpage/similar.html')
 
     if request.method == "POST":
-        text1 = request.POST['uname1']
-        text2 = request.POST['uname2']
+        text1 = request.POST['uname1'].lower()
+        text2 = request.POST['uname2'].lower()
 
         ratio = fuzz.ratio(text1,text2)
 
