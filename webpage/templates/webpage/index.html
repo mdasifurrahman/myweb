@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Ayon's web portal</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'webpage/css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'webpage/css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'webpage/css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'webpage/images/fevicon.png' %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'webpage/css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'webpage/images/loading.gif' %}" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img src="{% static 'webpage/images/logo.png' %}" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#"> Home  </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#contact">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1>AYON's<br> <span class="white1">Web Portal</span></h1>
+                           <!--<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p> -->
+                           <!--<a href="#">Read More</a> -->
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        <div class="text-img">
+                           <figure><img src="{% static 'webpage/images/box_img.png' %}" alt="#"/></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- blog_main -->
+      <div class="blog_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>ABOUT ME</h2>
+<!--                     <span>It is a long established fact that a reader will be distracted by the readable content of a page </span> -->
+                  </div>
+               </div>
+            </div>
+            <!-- fist section -->
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_two_box">
+                     <div class="row d_flex">
+                       
+                           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                           <div class="our_img">
+                              <figure><img src="{% static 'webpage/images/our_img01.jpg' %}" alt="#"/></figure>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                           <div class="our_text_box">
+                              <h3 class="awesome pa_wi">This is MD. ASIFUR RAHMAN</h3>
+                              <p>Trained in Agile and Kanban philosophy. Management tools include Trello, Notion, Asana, GitHub, Advanced Gantt Charting, Project Flow Mapping etc. Focused on delivering timely outputs within short deadlines by managing efficient use of resources.Web Developer specializing in Back end development (python & Django) and also know HTML, CSS. Experienced with data Analytics with SPSS, Data visualization with Tableau, data preprocessing with pandas and NumPy . I am experienced in C, python, Java( OOP) language. Experienced with SQL(MySQL & SQLite). </p>
+                              <div class="post_box padding_bottom1">
+        <!--                         <h4 class="flot_left1">Post By : Ayon </h4> -->
+<!--                                 <ul class="like">
+                                    <li><a href="#"><img src="{% static 'webpage/images/like.png' %}" alt="#"/>Like</a></li>
+                                     <li><a href="#"><img src="{% static 'webpage/images/comm.png' %}" alt="#"/>Comment</a></li>
+                                 </ul> -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+    <!-- end fist section -->
+    <!-- secend section -->
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_two_box">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="our_img">
+                              <figure><img class="he_img" src="{% static 'webpage/images/our_img02.jpg' %}" alt="#"/></figure>
+                          
+                         
+                           <div class="our_text_box position_box">
+                       <!--       <h3 class="awesome withi_color">Bsc in Computer Science & Engineering </h3>  -->
+                    <!--          <p class="hiuouh">Web Developer specializing in Back end development (python & Django) and also know HTML, CSS. Experienced with data Analytics with SPSS, Data visualization with Tableau, data preprocessing with pandas and NumPy . I am experienced in C, python, Java( OOP) language. Experienced with SQL(MySQL & SQLite)
+</p> -->
+                              <div class="post_box">
+<!--                                 <h4 class="flot_left1 withi_color">Post By : Blogger </h4>
+                                 <ul class="like withi_color">
+                                    <li><a href="#"><img src="{% static 'webpage/images/like1.png' %}" alt="#"/>Like</a></li>
+                                     <li><a href="#"><img src="{% static 'webpage/images/comm1.png' %}" alt="#"/>Comment</a></li>
+                                 </ul>  -->
+                              </div>
+                           </div>
+                        </div>
+                        
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end secend section -->
+
+             <!-- three section -->
+                     <div class="row">
+                         <div class="col-md-6 padding_bottom2">
+                           <div class="our_img">
+                              <figure><img src="{% static 'webpage/images/our_img03.png' %}" alt="#"/></figure>
+                           </div>
+                           <div class="our_text_box three_box">
+                              
+                              
+                              <div class="post_box d_flex padding_top3">
+                                 <h3 class="awesome padding_flot">Game Development</h3>
+<!--                                 <h4 class="flot_left1">Post By : Blogger </h4>
+                                 <ul class="like padding_left2">
+                                    <li><a href="#"><img src="{% static 'webpage/images/like.png' %}" alt="#"/>Like</a></li>
+                                     <li><a href="#"><img src="{% static 'webpage/images/comm.png' %}" alt="#"/>Comment</a></li>
+                                 </ul>  -->
+                              </div>
+                              <p>This is a desktop game which is made with python language and also pygame.When a user touch the Ball the score start counting. </p>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="our_img">
+                              <figure><img src="{% static 'webpage/images/our_img04.png' %}" alt="#"/></figure>
+                           </div>
+                           <div class="our_text_box three_box">
+                             
+                              
+                              <div class="post_box d_flex padding_top3">
+                               <h3 class="awesome padding_flot">Venue Reservaton System</h3>
+<!--                                 <h4 class="flot_left1">Post By : Blogger </h4>
+                                 <ul class="like padding_left2">
+                                    <li><a href="#"><img src="{% static 'webpage/images/like.png' %}" alt="#"/>Like</a></li>
+                                     <li><a href="#"><img src="{% static 'webpage/images/comm.png' %}" alt="#"/>Comment</a></li>
+                                 </ul> -->
+                              </div>
+                              <p>This system was design for a consumer and for admin panel. Where a consumer can select or choose the venue which he/she want & also if available. There will be no chance to conflict. Because here we will be use the concept of FIFO.
+On the other hand admin can also add or edit new venue & details of venue for user and also see the dashboard.
+Here we ensured High security. So there will be low percentage for losing data</p>
+                           </div>
+                        </div>
+                     </div>
+                 
+     
+    <!-- end three section -->
+   
+             <!-- for section -->
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_two_box magna_top90">
+                     <div class="row d_flex">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                           <div class="our_img">
+                              <figure><img src="{% static 'webpage/images/our_img05.jpg' %}" alt="#"/></figure>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                           <div class="our_text_box">
+                              <h3 class="awesome pa_wi">Online Ticket Booking System </h3>
+                              <p>Ticket Booking system is a system where anyone can buy tickets , remove tickets, add more tickets , cancel ticket and also see ticket by online  platform</p>
+                              <div class="post_box padding_bottom1">
+<!--                                 <h4 class="flot_left1">Post By : Blogger </h4>
+                                 <ul class="like">
+                                    <li><a href="#"><img src="{% static 'webpage/images/like.png' %}" alt="#"/>Like</a></li>
+                                     <li><a href="#"><img src="{% static 'webpage/images/comm.png' %}" alt="#"/>Comment</a></li>
+                                 </ul>  -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+    <!-- end for section -->
+
+
+         </div>
+      </div>
+      <!-- end blog_main -->
+    
+      <!-- Testimonial -->
+      <div class="section">
+        
+            <div id="" class="Testimonial">
+                <div class="container">
+               <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                     <div class="titlepage">
+                        <h2>Excperience</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row d_flex">
+                  <div class="col-md-3">
+   <!--                  <div class="Testimonial_box">
+                        <i><img src="{% static 'webpage/images/plan1.png' %}" alt="#"/></i>
+                     </div>  -->
+                  </div>
+                  <div class="col-md-9">
+                     <div class="Testimonial_box">
+                        <h4>Details</h4>
+                        <p>
+Worked with senior web developers to manage large & complex projects.
+Working knowledge of data analytics, data preprocessing, data modelling and data visualization in Python Programming Language, SPSS, Tableau.
+Expertise in query writing using MySQL along with dashboard development using Tableau, Power BI
+More than 2year working experience in analytics.
+I performed data analytics using R
+Working Knowledge of Networking
+Experienced with Machine learning, Deep Learning
+1.5 year working experience in Django Framework.
+Strong knowledge of problem solving skill by C, Python, Java programming Language.
+Experienced in Game Development.
+Complete detailed programming and development tasks for frontend & backend.
+
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <!-- end Testimonial -->
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contact with me</h2>
+                 <!--    <span>There are many variations of passages of Lorem Ipsum available, but the </span> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <form class="main_form ">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="form_contril" placeholder="Name " type="text" name="Name ">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_contril" placeholder="Email" type="text" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi">Thanks</strong><br>
+                           For Coming
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="https://www.facebook.com/a.gentalmem/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/md-asifur-rahman-0a59b7205/"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved with Ayon.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'webpage/js/jquery.min.js'%}"></script>
+      <script src="{% static 'webpage/js/popper.min.js'%}"></script>
+      <script src="{% static 'webpage/js/bootstrap.bundle.min.js'%}"></script>
+      <script src="{% static 'webpage/js/jquery-3.0.0.min.js'%}"></script>
+      
+      <!-- sidebar -->
+      <script src="{% static 'webpage/js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+      <script src="{% static 'webpage/js/custom.js'%}"></script>
+      <script src="{% static 'webpage/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js'%}"></script>
+   </body>
+</html>
+
