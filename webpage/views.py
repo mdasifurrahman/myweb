@@ -5,6 +5,8 @@ from fuzzywuzzy import process
 # Create your views here.
 from django.core.files.storage import FileSystemStorage
 import PyPDF2
+from .forms import MyfileUploadForm
+from .models import file_upload
 
 
 def home(request):
@@ -70,3 +72,41 @@ def upload(request):
         # print(upload_file2.name)
         # print(upload_file2.size)
         return render(request,'webpage/upload.html', context)
+
+
+def dstore(request):
+    if request.method == 'POST':
+        form = MyfileUploadForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            name = form.cleaned_data['file_name']
+            the_files = form.cleaned_data['files_data']
+
+            file_upload(file_name=name, my_file=the_files).save()
+            all_data = file_upload.objects.all()
+
+            context = {
+                'data': all_data
+            }
+
+            return render(request, 'webpage/view.html', context)
+        else:
+            return HttpResponse('error')
+
+    else:
+
+        context = {
+            'form': MyfileUploadForm()
+        }
+
+        return render(request, 'webpage/up.html', context)
+
+
+def show_file(request):
+    all_data = file_upload.objects.all()
+
+    context = {
+        'data': all_data
+    }
+
+    return render(request, 'webpage/view.html', context)

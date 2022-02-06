@@ -24,7 +24,12 @@ urlpatterns = [
     path('', webviwes.home),
     path('similarity/', webviwes.similarity),
     path('upload/', webviwes.upload),
+    path('dstore/', webviwes.dstore),
+    path('view/', webviwes.show_file),
 
 ]
 # if settings.DEBUG:
 #     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
