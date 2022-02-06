@@ -25,7 +25,7 @@ urlpatterns = [
     path('similarity/', webviwes.similarity),
     path('upload/', webviwes.upload),
     path('dstore/', webviwes.dstore),
-    path('view/', webviwes.show_file),
+    path('wait/', webviwes.wait),
 
 ]
 # if settings.DEBUG:

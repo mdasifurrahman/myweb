@@ -110,3 +110,8 @@ def show_file(request):
     }
 
     return render(request, 'webpage/view.html', context)
+
+
+
+def wait(request):
+    return HttpResponse("Wait for this project")
